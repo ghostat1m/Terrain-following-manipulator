@@ -24,7 +24,7 @@ class Sensor:
         ip,ic=surface.ray_trace(rayOrigin,rayEnd,first_point=True)
         if not ip:#check if intersection point array is empty sinifying no intersection found
         	print('no intersection found')
-        	dist= 10000
+        	dist= 10000#represents infinite distance
         else:	
         	distance=np.sqrt(np.sum(ip-rayOrigin))#ip in the intersection point
         	
