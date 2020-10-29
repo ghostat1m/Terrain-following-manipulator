@@ -37,3 +37,10 @@ class Vec3:
 
     def norm(self):
         return sqrt(self.x**2 + self.y**2 + self.z**2)
+
+    def normalize(self):
+        mag = self.norm()
+        if(mag == 0):
+            return 0
+
+        return Vec3(self.x/mag, self.y/mag, self.z/mag)
