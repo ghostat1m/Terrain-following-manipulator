@@ -14,5 +14,12 @@ MIN_dtheta = 0.1    # this could be a vector?
 # steps that the manipulator takes on the path direction.
 MAX_STEPS = 150         # some arbitrary number for now.
 
+# l = distance between 2 adjacent sensors in the array
+l = 5   # arbitrary value taken for now.
+
+
+
+
+
 
 
