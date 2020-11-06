@@ -5,7 +5,9 @@ import numpy as np
 
 class Sensor:
     def __init__(self, x, y, z):
-        # relative_pos = Vec3(x, y, 0)     # position relative to end effectors origin
+        self.x=x
+        self.y=y
+        self.z=z
         # global_pos =          [TODO]
         pass
     
@@ -29,16 +31,6 @@ class Sensor:
         	distance=np.sqrt(np.sum(ip-rayOrigin))#ip in the intersection point
         	
         return distance
-   
-    def update_pos(self, dx, dy, dz):
-        """
-        updates the global position of the sensors.
-
-        dx = (float) disp in global x direction
-        dy = (float) disp in global y direction
-        dz = (float) disp in global z direction
-        """
-        pass
 
 
     
