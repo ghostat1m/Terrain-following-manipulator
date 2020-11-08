@@ -47,7 +47,7 @@ def coordinate_mat(dist_mat):
     rows = 3
     cols = 3
 
-    mat = [[0 for x in range(rows) for y in range(cols)]]
+    mat = [[0 for x in range(rows)] for y in range(cols)]
 
     start_y = -l
     for i in range(rows):
